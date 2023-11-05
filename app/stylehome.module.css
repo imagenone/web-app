@@ -1,0 +1,279 @@
+
+.container {
+    max-width: 100%;
+    overflow-x: hidden; /* Oculta el scroll horizontal si el contenido se desborda */
+  }
+  
+  
+  
+  
+  .longImage { 
+   max-width: 100%;
+   height: 100px;
+  border: solid;
+  border-radius:  16px;
+  }
+  
+  @media (max-width: 460px) {
+    .longImage {
+      width: 390px;
+      height: 400px;
+     
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .longImage {
+      width: 466px;
+      height: 400px;
+     
+    }
+  }
+  
+  
+  
+  
+  
+  .columnContainer {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .column1 {
+ 
+    margin: 1PX;
+    text-align: center;
+    flex: 1;
+    text-decoration-line: none;
+  
+  }
+  
+  .column2 {
+    border:solid 5px rgba(238, 233, 233, 0.325) ;
+    flex: 2;
+    text-decoration-line: none;
+    padding: 20px; /* Añade espaciado alrededor del contenido */
+  }
+  
+  @media (min-width:  1024px ) {
+    .column2 {
+      width: 50%; /* Ajusta el ancho de la columna según tus necesidades */
+      padding: 20px; /* Añade espaciado alrededor del contenido */
+    }
+    .longImage {
+      width: 330px; /* Asegura que las imágenes se ajusten al ancho de la columna */
+      height: 60%;
+    }
+  }
+  @media (min-width:  800px ) {
+  
+  
+    .column2 {
+      width: 10%; /* Ajusta el ancho de la columna según tus necesidades */
+      padding: 20px; /* Añade espaciado alrededor del contenido */
+    }
+    .longImage {
+      width: 100%; /* Asegura que las imágenes se ajusten al ancho de la columna */
+      height: 60%;
+    }
+  }
+  
+  
+  .column3 {
+    /* border: solid 1px ; */
+    margin: 1PX;
+    text-align: center;
+    flex: 1;
+    text-decoration-line: none;
+    /* background-color: #ced4cd; */
+  
+  
+  
+    /* Estilos para la columna 3 o déjala vacía si no la necesitas */
+  }
+  
+  /* Estilos específicos para tu contenido */
+  .containerTitulo {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .colorText {
+    text-align: center;
+    color: white;
+  }
+  
+  /* Estilos responsive */
+  @media (max-width: 768px) {
+    .columnContainer {
+      flex-direction: column;
+    }
+  
+    .column2 {
+      padding: 10px; /* Ajusta el espaciado para pantallas más pequeñas */
+    }
+  
+  }
+  
+  
+  
+  .box3 {
+   background-color: gray;
+    height: 30%;
+    overflow: hidden;
+    margin-top: 200px;
+  }
+  
+  /* Media query para pantallas muy grandes (mayor o igual a 1920px) */
+  @media (min-width: 1920px)  {
+    .column2 {
+      width: 10%;
+    }
+  
+    .box2 {
+      
+      width: 50%;
+      margin: 0 auto; 
+    }
+    .longImage {
+      width: 310px; /* Asegura que las imágenes se ajusten al ancho de la columna */
+      height: 60%;
+    }
+  }
+  
+  /* Media query para pantallas de 500px a 1920px */
+  @media (min-width: 501px) and (max-width: 700px) {
+    .column2 {
+      width: 100%;
+    }
+  
+    .box2 {
+      width: 60%;
+      margin: 0 auto; 
+    }
+  
+    .longImage {
+      width: 310px; /* Asegura que las imágenes se ajusten al ancho de la columna */
+      height: 60%;
+    }
+  }
+  
+  
+  
+  /* Media query para pantallas de 500px a 1920px */
+  @media (min-width: 700px) and (max-width: 900px) {
+    .column2 {
+      width: 80%;
+    }
+  
+    .box2 {
+      width: 37%;
+      margin: 0 auto; 
+    }
+  
+    .longImage {
+      width: 310px; /* Asegura que las imágenes se ajusten al ancho de la columna */
+      height: 60%;
+    }
+  }
+  /* Media query para pantallas de 500px a 1920px */
+  @media (min-width: 900px) and (max-width: 1000px) {
+    .column2 {
+      width: 75%;
+    }
+  
+    .box2 {
+      width: 30%;
+      margin: 0 auto; 
+    }
+  
+    .longImage {
+      width: 310px; /* Asegura que las imágenes se ajusten al ancho de la columna */
+      height: 60%;
+    }
+  }
+  /* Media query para pantallas de 500px a 1920px */
+  @media (min-width: 1000px) and (max-width: 1919px) {
+    .column2 {
+      width: 20%;
+    }
+  
+    .box2 {
+      width: 40%;
+      margin: 0 auto; 
+    }
+  
+    .longImage {
+      width: 310px; /* Asegura que las imágenes se ajusten al ancho de la columna */
+      height: 60%;
+    }
+  }
+  .box3 {
+    display: flex; /* Configuración de flexbox para alinear los elementos en línea horizontal */
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    background-color: #e6e6e6; /* Cambia el color de fondo según tus preferencias */
+    padding: 100px; /* Añade relleno para espaciar el contenido del pie de página */
+    box-shadow: 10px 0px 50px #888888
+  
+  }
+  /*¿¿
+  /* Estilos para los iconos */
+  .socialIcons {
+    display: flex; /* Configuración de flexbox para los iconos */
+    gap: 50px; /* Espaciado entre los iconos */
+    
+  }
+  
+  .socialIcons a {
+    text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+    color: rgb(0, 0, 0); /* Cambia el color del enlace según tus preferencias */
+    font-size: 30px;
+    box-shadow: 0px 10px 10px #888888
+  
+  }
+  
+  .socialIcons a:hover {
+    color: rgb(144, 144, 153); /* Cambia el color al pasar el mouse por encima según tus preferencias */
+  }
+  
+  
+  
+  
+  
+  .loadingcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    height: 50vh; /* Establece la altura del contenedor al 100% del viewport height */
+  }
+  
+  .loadingicon {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #3498db;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .backgroundImage {
+    background-image: url('../public/images/mall_3.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+  }
+  .backgroundImage_1 {
+    background-image: url('../public/images/programacionimage.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+  }
