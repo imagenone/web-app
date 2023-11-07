@@ -24,14 +24,14 @@ export default function Home() {
 
   const images = [    
   require("/public/images/flor_1.jpg"),
-  require("/public/images/jengibre1.jpg"),
+  require("/public/images/playam1.jpg"),
   require("/public/images/flor4.jpg"),
   require("/public/images/flor3.jpg"),
   require("/public/images/ruda.jpg"),
   require("/public/images/ruda4.jpg"),
   require("/public/images/ruda1.jpg"),
   require("/public/images/romeroimg11.jpg"),
-  require("/public/images/imagen_lapto.jpg"),    
+  require("/public/images/playam2.jpg"),    
   require("/public/images/mall_3.jpg"),    
 
   ];
@@ -278,7 +278,7 @@ const handleMouseEnter = (id) => {
           <div className={`bg-transparent ${styles.column2}`}>
             <div  styles={{backgroundColor:"red"}} >
               <Slider {...settingscol2}
-              style={{border:"solid 1px ",boxShadow:"10px 10px 1000px 10px  " }}
+              style={{border:"solid 1px ",boxShadow:"10px 10px 100px 10px  " }}
               >
               {/* first slider */}
                 <div className="">
@@ -358,7 +358,7 @@ const handleMouseEnter = (id) => {
           </div>
          
        
-       <Link  href="../../plantas-prop/jengibre" 
+       <div  href="/" 
               style={{
                   
                      margin:1,
@@ -373,17 +373,14 @@ const handleMouseEnter = (id) => {
                      >
 
             
-            
-                     <Image
-                        className={styles.longImage}
-                        src={galery_image[8].src}
-                        width={500}
-                        height={500}
-                        alt={galery_image[8].alt}
-                        priority
-                      />
-                        <h3 style={{color:""}}>Las 7 Mejores Playas</h3>
-                    </Link>
+              <div className={styles.backgroundImage_2}>
+                  <h1 className={`fs-5 ${styles.colorText}`} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', fontWeight:"bolder" }}>
+                    
+                  Las 7 Mejores Playas para ir 
+                    </h1>
+                  </div>
+                     <p>Imagínate un mundo donde la arena dorada se funde con aguas cristalinas, y la brisa salada acaricia tu piel mientras contemplas la inmensidad del océano <Link href="/viaje/playa" >sigue leyendo ...</Link>  </p>
+                    </div>
    
           
       
